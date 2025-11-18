@@ -1,42 +1,225 @@
+/* Terminal/CTF Aesthetic Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: 'Courier New', monospace;
+  background: #000;
+  overflow-x: hidden;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Scanline effect overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+  animation: scanlines 8s linear infinite;
+}
+
+@keyframes scanlines {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(10px); }
+}
+
+/* CRT screen curvature effect */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Glitch text animation */
+.glitch {
+  position: relative;
+  animation: glitch-skew 1s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00ff;
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 #00ffff;
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(42px, 9999px, 44px, 0); }
+  5% { clip: rect(12px, 9999px, 59px, 0); }
+  10% { clip: rect(48px, 9999px, 29px, 0); }
+  15% { clip: rect(42px, 9999px, 73px, 0); }
+  20% { clip: rect(63px, 9999px, 27px, 0); }
+  25% { clip: rect(34px, 9999px, 55px, 0); }
+  30% { clip: rect(86px, 9999px, 73px, 0); }
+  35% { clip: rect(20px, 9999px, 20px, 0); }
+  40% { clip: rect(26px, 9999px, 60px, 0); }
+  45% { clip: rect(25px, 9999px, 66px, 0); }
+  50% { clip: rect(57px, 9999px, 98px, 0); }
+  55% { clip: rect(5px, 9999px, 46px, 0); }
+  60% { clip: rect(82px, 9999px, 31px, 0); }
+  65% { clip: rect(54px, 9999px, 27px, 0); }
+  70% { clip: rect(28px, 9999px, 99px, 0); }
+  75% { clip: rect(45px, 9999px, 69px, 0); }
+  80% { clip: rect(23px, 9999px, 85px, 0); }
+  85% { clip: rect(54px, 9999px, 84px, 0); }
+  90% { clip: rect(45px, 9999px, 47px, 0); }
+  95% { clip: rect(37px, 9999px, 20px, 0); }
+  100% { clip: rect(4px, 9999px, 91px, 0); }
+}
+
+@keyframes glitch-skew {
+  0% { transform: skew(0deg); }
+  10% { transform: skew(-2deg); }
+  20% { transform: skew(2deg); }
+  30% { transform: skew(-1deg); }
+  40% { transform: skew(1deg); }
+  50% { transform: skew(0deg); }
+  60% { transform: skew(-1deg); }
+  70% { transform: skew(2deg); }
+  80% { transform: skew(-2deg); }
+  90% { transform: skew(1deg); }
+  100% { transform: skew(0deg); }
+}
+
+/* Terminal-style text glow */
+.terminal-glow {
+  text-shadow: 
+    0 0 5px rgba(0, 255, 0, 0.8),
+    0 0 10px rgba(0, 255, 0, 0.6),
+    0 0 15px rgba(0, 255, 0, 0.4),
+    0 0 20px rgba(0, 255, 0, 0.2);
+}
+
+/* Neon border glow effect */
+.neon-border {
+  box-shadow: 
+    0 0 5px rgba(0, 255, 255, 0.8),
+    0 0 10px rgba(0, 255, 255, 0.6),
+    0 0 20px rgba(0, 255, 255, 0.4),
+    inset 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Loading spinner with terminal style */
+.terminal-spinner {
+  display: inline-block;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Flicker effect for text */
+.flicker {
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+  20%, 24%, 55% {
+    opacity: 0.4;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Custom scrollbar with terminal theme */
+::-webkit-scrollbar {
+  width: 12px;
 }
 
-.card {
-  padding: 2em;
+::-webkit-scrollbar-track {
+  background: #000;
+  border-left: 2px solid #00ff00;
 }
 
-.read-the-docs {
-  color: #888;
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border: 2px solid #000;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffff;
+}
+
+/* Retro button styles */
+.retro-button {
+  position: relative;
+  padding: 10px 20px;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retro-button:hover {
+  background: #00ff00;
+  color: #000;
+  box-shadow: 
+    0 0 10px #00ff00,
+    0 0 20px #00ff00,
+    0 0 30px #00ff00;
+}
+
+.retro-button::before {
+  content: '> ';
+}
+
+/* Matrix rain effect container */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+

@@ -1,0 +1,28 @@
+### Create a new user (Signup)
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "email": "test@brainrot.io",
+  "password": "test123"
+}
+
+###
+
+### Login with the created user
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@brainrot.io",
+  "password": "test123"
+}
+
+###
+
+### Verify token (replace YOUR_TOKEN with the token from login response)
+GET http://localhost:5000/api/auth/verify
+Authorization: Bearer YOUR_TOKEN_HERE
+
+###
