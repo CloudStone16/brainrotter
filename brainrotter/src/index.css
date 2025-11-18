@@ -1,2 +1,24 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-flip {
+    animation: flip-vertical 0.5s steps(2, end) infinite;
+  }
+
+  @keyframes flip-vertical {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+body {
+  @apply bg-black text-white font-mono;
+}
