@@ -15,6 +15,8 @@ const GenerateClip: React.FC = () => {
   const [topic, setTopic] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState('');
+  const [videoUrl, setVideoUrl] = useState('');
+  const [generationSuccess, setGenerationSuccess] = useState(false);
 
   const backgroundOptions = [
     { 
@@ -64,7 +66,13 @@ const GenerateClip: React.FC = () => {
       const data = await response.json();
       console.log('Generation successful:', data);
       
-      // You can navigate to a results page or show success message
+      // Save the video URL and show success
+      if (data.video_url) {
+        setVideoUrl(data.video_url);
+        setGenerationSuccess(true);
+      }
+      
+      // Optionally navigate to a results page
       // navigate('/results', { state: { videoData: data } });
       
     } catch (err) {
@@ -215,6 +223,46 @@ const GenerateClip: React.FC = () => {
             {isBrainrot ? '← Back to the Hub' : '← Back to Dashboard'}
           </button>
         </div>
+
+        {/* Video Player - Shows after successful generation */}
+        {generationSuccess && videoUrl && (
+          <div className="mt-8 bg-black/40 backdrop-blur-xl border-2 border-neon-purple/50 rounded-3xl p-8 shadow-2xl">
+            <h2 className="text-3xl font-bold text-center mb-6">
+              {isBrainrot ? '🔥 YOUR CLIP IS COOKED 🔥' : '✨ Your Video is Ready! ✨'}
+            </h2>
+            
+            <div className="relative rounded-2xl overflow-hidden border-2 border-neon-purple/30">
+              <video 
+                controls 
+                autoPlay
+                className="w-full max-h-[600px]"
+                src={videoUrl}
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <div className="mt-6 flex gap-4">
+              <a
+                href={videoUrl}
+                download
+                className="flex-1 py-4 bg-neon-purple rounded-2xl text-center font-bold hover:bg-neon-purple/80 transition-all duration-300"
+              >
+                {isBrainrot ? '📥 Download The Sauce' : '📥 Download Video'}
+              </a>
+              <button
+                onClick={() => {
+                  setVideoUrl('');
+                  setGenerationSuccess(false);
+                  setTopic('');
+                }}
+                className="flex-1 py-4 border-2 border-white/20 rounded-2xl font-bold hover:bg-white/5 transition-all duration-300"
+              >
+                {isBrainrot ? '🔄 Cook Another Banger' : '🔄 Generate Another'}
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
