@@ -9,12 +9,17 @@
 #root {
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
   font-family: 'Courier New', monospace;
   background: #000;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Scanline effect overlay */
