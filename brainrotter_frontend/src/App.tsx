@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import GenerateClip from './pages/GenerateClip';
 import BrainrotToggle from './components/BrainrotToggle';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/generate" element={<GenerateClip />} />
         <Route path="/home" element={<Home />} />
       </Routes>
     </main>
