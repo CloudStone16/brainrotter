@@ -13,11 +13,11 @@ function App() {
       <GlitchBackground />
       <BrainrotToggle />
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/generate" element={<GenerateClip />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </main>
   );
