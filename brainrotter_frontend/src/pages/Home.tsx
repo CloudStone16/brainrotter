@@ -18,14 +18,14 @@ const Home: React.FC = () => {
         <img src={brain} alt="brain" className="w-24 h-24 md:w-32 md:h-32 animate-bounce" />
       </div>
       <p className="mt-4 text-lg md:text-2xl text-gray-300">
-        {isBrainrot ? 'max prestige your aura.' : 'Where your content ascends.'}
+        {isBrainrot ? 'made for sigmas, by sigmas' : 'Where your content ascends.'}
       </p>
       <div className="mt-12 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
         <Link
           to="/register"
           className="px-8 py-3 border border-white/20 rounded-2xl text-lg hover:bg-white/5 transition-colors duration-300"
         >
-          {isBrainrot ? 'get mogged' : 'Register'}
+          {isBrainrot ? 'sign up for aura' : 'Register'}
         </Link>
         <Link
           to="/"
