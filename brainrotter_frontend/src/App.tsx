@@ -24,8 +24,11 @@ function App() {
         {/* ⭐ DEFAULT ROUTE = LANDING PAGE ⭐ */}
         <Route path="/" element={<Landing />} />
 
+        {/* ⭐ AUTH ROUTES ⭐ */}
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+        {/* ⭐ USER ROUTES ⭐ */}
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/generate" element={<GenerateClip />} />
         <Route path="/home" element={<Home />} />
