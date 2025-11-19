@@ -28,16 +28,10 @@ const Home: React.FC = () => {
           {isBrainrot ? 'sign up for aura' : 'Register'}
         </Link>
         <Link
-          to="/"
+          to="/login"
           className="px-8 py-3 border border-white/20 rounded-2xl text-lg hover:bg-white/5 transition-colors duration-300"
         >
           {isBrainrot ? 'login fr fr' : 'Login'}
-        </Link>
-        <Link
-          to="/dashboard"
-          className="px-8 py-3 border-2 border-neon-purple rounded-2xl text-lg text-neon-purple hover:bg-neon-purple hover:text-black transition-colors duration-300"
-        >
-          {isBrainrot ? 'the hub' : 'Dashboard'}
         </Link>
       </div>
       {isBrainrot && (

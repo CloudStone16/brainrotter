@@ -108,36 +108,65 @@ def tts(narration, token, background_video_name, model="eleven"):
 
     elif model == "groq":
         load_dotenv()
-        print("Using Groq")
+        print("Using Groq (with PlayAI TTS and ElevenLabs fallback)")
         token = os.getenv("LLM_API_TOKEN")
         if not token:
             print("Could not find token in the environment variables")
             return
-        client = OpenAI(api_key=token, base_url="https://api.groq.com/openai/v1") # Connecting to groq
-        names = [
-        'Aaliyah-PlayAI', 'Adelaide-PlayAI', 'Angelo-PlayAI', 'Arista-PlayAI', 'Atlas-PlayAI',
-        'Basil-PlayAI', 'Briggs-PlayAI', 'Calum-PlayAI', 'Celeste-PlayAI', 'Cheyenne-PlayAI',
-        'Chip-PlayAI', 'Cillian-PlayAI', 'Deedee-PlayAI', 'Eleanor-PlayAI', 'Fritz-PlayAI',
-        'Gail-PlayAI', 'Indigo-PlayAI', 'Jennifer-PlayAI', 'Judy-PlayAI', 'Mamaw-PlayAI',
-        'Mason-PlayAI', 'Mikail-PlayAI', 'Mitch-PlayAI', 'Nia-PlayAI', 'Quinn-PlayAI',
-        'Ruby-PlayAI', 'Thunder-PlayAI'
-        ]
-        name = random.choice(names) # Choosing a random voice
-        print(f"Using voice: {name}")
-        unique_id = uuid.uuid4().hex
-        filename = f"voiceover_{unique_id}.wav" # Saving the file
-        speech_file_path = Path(__file__).parent / filename
-        with client.audio.speech.with_streaming_response.create(
-            model="playai-tts",
-            voice=name,
-            response_format="wav",
-            input=narration,
-        ) as response:
-            response.stream_to_file(speech_file_path) # Writing into the file
-        print(f"Speech saved as {speech_file_path}")
-        time.sleep(2) # Wait for 2 seconds before calling stt, in order to not get rate banned 
-        output_path = stt(token, str(speech_file_path), background_video_name)
-        return unique_id, output_path
+
+        try:
+            client = OpenAI(api_key=token, base_url="https://api.groq.com/openai/v1")
+            names = [
+            'Aaliyah-PlayAI', 'Adelaide-PlayAI', 'Angelo-PlayAI', 'Arista-PlayAI', 'Atlas-PlayAI',
+            'Basil-PlayAI', 'Briggs-PlayAI', 'Calum-PlayAI', 'Celeste-PlayAI', 'Cheyenne-PlayAI',
+            'Chip-PlayAI', 'Cillian-PlayAI', 'Deedee-PlayAI', 'Eleanor-PlayAI', 'Fritz-PlayAI',
+            'Gail-PlayAI', 'Indigo-PlayAI', 'Jennifer-PlayAI', 'Judy-PlayAI', 'Mamaw-PlayAI',
+            'Mason-PlayAI', 'Mikail-PlayAI', 'Mitch-PlayAI', 'Nia-PlayAI', 'Quinn-PlayAI',
+            'Ruby-PlayAI', 'Thunder-PlayAI'
+            ]
+            name = random.choice(names)
+            print(f"Using PlayAI voice: {name}")
+            unique_id = uuid.uuid4().hex
+            filename = f"voiceover_{unique_id}.wav"
+            speech_file_path = Path(__file__).parent / filename
+            with client.audio.speech.with_streaming_response.create(
+                model="playai-tts",
+                voice=name,
+                response_format="wav",
+                input=narration,
+            ) as response:
+                response.stream_to_file(speech_file_path)
+            print(f"PlayAI Speech saved as {speech_file_path}")
+            time.sleep(2)
+            output_path = stt(token, str(speech_file_path), background_video_name)
+            return unique_id, output_path
+        except Exception as e:
+            print(f"PlayAI TTS failed: {e}. Falling back to ElevenLabs.")
+            # Fallback to ElevenLabs logic
+            eleven_token = os.getenv("ELEVEN_API_KEY")
+            if not eleven_token:
+                print("ELEVEN_API_KEY not found for fallback.")
+                return
+
+            client = ElevenLabs(api_key=eleven_token)
+            audio = client.text_to_speech.convert(
+                text=narration,
+                voice_id="pqHfZKP75CvOlQylNhV4",
+                model_id="eleven_turbo_v2_5",
+                output_format="mp3_44100_128",  
+            )
+            unique_id = uuid.uuid4().hex
+            filename = f"output_with_subtitles_{unique_id}.mp3"
+            save(audio, filename)
+            print(f"ElevenLabs Speech saved as {filename}")
+            
+            # Need to pass the correct token for STT, assuming LLM_API_TOKEN is still valid for STT
+            llm_token = os.getenv("LLM_API_TOKEN") 
+            if not llm_token:
+                print("Could not find LLM_API_TOKEN for STT in fallback")
+                return
+            output_path = stt(llm_token, filename, background_video_name)
+            return unique_id, output_path
 
 
 

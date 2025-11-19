@@ -8,13 +8,16 @@ import { sendEmail } from "../utils/sendEmail.ts";
 
 // REGISTER
 export const register = async (req: Request, res: Response) => {
-  const { email, password } = req.body;
+  const { username, email, password } = req.body;
 
-  const exists = await User.findOne({ email });
-  if (exists) return res.status(400).json({ message: "User already exists" });
+  const emailExists = await User.findOne({ email });
+  if (emailExists) return res.status(400).json({ message: "Email already in use" });
+
+  const usernameExists = await User.findOne({ username });
+  if (usernameExists) return res.status(400).json({ message: "Username already taken" });
 
   const hashed = await bcrypt.hash(password, 10);
-  const user = await User.create({ email, password: hashed });
+  const user = await User.create({ username, email, password: hashed });
 
   res.json({ message: "User created", user });
 };
@@ -84,4 +87,52 @@ export const resetPassword = async (req: Request, res: Response) => {
   await user.save();
 
   res.json({ message: "Password updated" });
+};
+
+// UPDATE USERNAME
+export const updateUsername = async (req: Request, res: Response) => {
+  const { username } = req.body;
+  // @ts-ignore
+  const userId = req.user.id;
+
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    // Check if new username is already taken
+    const usernameExists = await User.findOne({ username });
+    if (usernameExists && usernameExists._id.toString() !== userId) {
+      return res.status(400).json({ message: "Username already taken" });
+    }
+
+    user.username = username;
+    await user.save();
+
+    res.json({ message: "Username updated", user });
+  } catch (error) {
+    res.status(500).json({ message: "Server Error" });
+  }
+};
+
+// UPDATE PASSWORD
+export const updatePassword = async (req: Request, res: Response) => {
+  const { currentPassword, newPassword } = req.body;
+  // @ts-ignore
+  const userId = req.user.id;
+
+  try {
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    const match = await bcrypt.compare(currentPassword, user.password);
+    if (!match) return res.status(400).json({ message: "Incorrect current password" });
+
+    const hashed = await bcrypt.hash(newPassword, 10);
+    user.password = hashed;
+    await user.save();
+
+    res.json({ message: "Password updated" });
+  } catch (error) {
+    res.status(500).json({ message: "Server Error" });
+  }
 };

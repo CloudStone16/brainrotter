@@ -1,26 +1,19 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-
-import { BrainrotProvider } from './contexts/BrainrotContext.tsx';
-import { AuthProvider } from './contexts/AuthContext.tsx';
-
+import { BrainrotProvider } from './contexts/BrainrotContext';
+import { AuthProvider } from './contexts/AuthContext';
+import App from './App';
 import './index.css';
-
-// ❌ REMOVE THIS (AppRoutes doesn't exist anymore)
-// import AppRoutes from './AppRoutes.tsx';
-
-// ✅ USE App.tsx INSTEAD
-import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AuthProvider>
-      <BrainrotProvider>
-        <BrowserRouter>
+    <BrowserRouter>
+      <AuthProvider>
+        <BrainrotProvider>
           <App />
-        </BrowserRouter>
-      </BrainrotProvider>
-    </AuthProvider>
-  </StrictMode>
+        </BrainrotProvider>
+      </AuthProvider>
+    </BrowserRouter>
+  </StrictMode>,
 );

@@ -5,10 +5,13 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import GenerateClip from './pages/GenerateClip';
+import Clips from './pages/Clips';
+import Account from './pages/Account'; // Import Account page
 import BrainrotToggle from './components/BrainrotToggle';
+import ProtectedRoute from './components/ProtectedRoute';
 
 // ⭐ Landing Page Import
-import Landing from './pages/Landing';
+import Landing from './pages/landing';
 
 // ⭐ Forgot/Reset Import
 import ForgotPassword from './pages/ForgotPassword';
@@ -28,9 +31,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* ⭐ USER ROUTES ⭐ */}
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/generate" element={<GenerateClip />} />
+        {/* ⭐ USER ROUTES (PROTECTED) ⭐ */}
+        <Route element={<ProtectedRoute />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/generate" element={<GenerateClip />} />
+          <Route path="/clips" element={<Clips />} />
+          <Route path="/account" element={<Account />} />
+        </Route>
+        
         <Route path="/home" element={<Home />} />
 
         {/* ⭐ NEW ROUTES ⭐ */}

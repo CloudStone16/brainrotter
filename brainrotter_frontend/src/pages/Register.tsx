@@ -14,13 +14,14 @@ const Register: React.FC = () => {
     e.preventDefault();
 
     const form = e.target as HTMLFormElement;
+    const username = form.username.value;
     const email = form.email.value;
     const password = form.password.value;
 
     const res = await fetch(`${API_URL}/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username, email, password }),
     });
 
     const data = await res.json();

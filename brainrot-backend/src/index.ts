@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth.ts';
+import clipRoutes from './routes/clips.ts';
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(cors({ origin: process.env.CORS_ORIGIN, credentials: true }));
 
 app.use("/api/auth", authRoutes);
+app.use("/api/clips", clipRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI!)

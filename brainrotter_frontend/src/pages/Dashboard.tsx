@@ -1,12 +1,14 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useBrainrot } from '../contexts/BrainrotContext';
+import { useAuth } from '../contexts/AuthContext'; // Import useAuth
 import skibidi from '../assets/skibidi-skibidi-toilet.gif';
 import brain from '../assets/brain.gif';
 import skull from '../assets/skull.png';
 
 const Dashboard: React.FC = () => {
   const { isBrainrot } = useBrainrot();
+  const { user, logout } = useAuth(); // Get user and logout function
   const navigate = useNavigate();
 
   const cards = [
@@ -20,18 +22,29 @@ const Dashboard: React.FC = () => {
       title: isBrainrot ? 'Rizzponses' : 'View Clips',
       description: isBrainrot ? 'check the W rizz.' : 'Browse your generated clips.',
       content: <img src={brain} alt="brain" className="w-full h-auto rounded-lg mt-4" />,
-      onClick: () => {},
+      onClick: () => navigate('/clips'),
     },
     {
       title: isBrainrot ? 'Aura Settings' : 'Account',
       description: isBrainrot ? 'max prestige your account.' : 'Manage your account settings.',
       content: <img src={skull} alt="skull" className="w-2/3 h-auto rounded-lg mt-4 mx-auto animate-flip" />,
-      onClick: () => {},
+      onClick: () => navigate('/account'),
     },
   ];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
+      {/* Greeting and Logout Button */}
+      <div className="absolute top-4 right-4 flex items-center space-x-4">
+        <span className="text-lg text-gray-300">Greetings, {user?.username || 'User'}</span>
+        <button
+          onClick={logout}
+          className="px-4 py-2 border border-red-500/50 text-red-300 rounded-lg hover:bg-red-500/20 transition-colors"
+        >
+          Logout
+        </button>
+      </div>
+
       <div className="text-center mb-12">
         <h1 className="text-7xl md:text-8xl font-bold tracking-widest">BRAINROTTER</h1>
         <p className="mt-4 text-lg md:text-xl text-gray-300">

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useBrainrot } from '../contexts/BrainrotContext';
+import { useAuth } from '../contexts/AuthContext'; // Import useAuth
+import API_URL from '../config/api';
 import skibidi from '../assets/skibidi-skibidi-toilet.gif';
 import brain from '../assets/brain.gif';
 import skull from '../assets/skull.png';
@@ -9,6 +11,7 @@ type BackgroundVideo = 'minecraft' | 'subway_surfers' | 'gta_v';
 
 const GenerateClip: React.FC = () => {
   const { isBrainrot } = useBrainrot();
+  const { token } = useAuth(); // Get token from auth context
   const navigate = useNavigate();
   
   const [selectedBackground, setSelectedBackground] = useState<BackgroundVideo>('minecraft');
@@ -46,11 +49,12 @@ const GenerateClip: React.FC = () => {
     setError('');
 
     try {
-      // Send request to Express.js backend instead of directly to Flask
-      const response = await fetch('http://localhost:3000/api/clips/generate', {
+      // Send request to the new authenticated endpoint
+      const response = await fetch(`${API_URL}/clips/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`, // Add auth token
         },
         body: JSON.stringify({
           background_video: selectedBackground,
@@ -66,14 +70,11 @@ const GenerateClip: React.FC = () => {
       const data = await response.json();
       console.log('Generation successful:', data);
       
-      // Save the video URL and show success
-      if (data.video_url) {
-        setVideoUrl(data.video_url);
+      // The new endpoint returns the full clip object, including the videoUrl
+      if (data.videoUrl) {
+        setVideoUrl(data.videoUrl);
         setGenerationSuccess(true);
       }
-      
-      // Optionally navigate to a results page
-      // navigate('/results', { state: { videoData: data } });
       
     } catch (err) {
       setError(isBrainrot ? 'L rizz moment, try again chief 😭' : 'Failed to generate clip. Please try again.');

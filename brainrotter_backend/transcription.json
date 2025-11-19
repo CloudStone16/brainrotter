@@ -1,527 +1,517 @@
 [
   {
-    "word": "Want",
+    "word": "Are",
     "start": 0.0,
-    "end": 0.18
-  },
-  {
-    "word": "to",
-    "start": 0.18,
-    "end": 0.32
-  },
-  {
-    "word": "unlock",
-    "start": 0.32,
-    "end": 0.56
-  },
-  {
-    "word": "your",
-    "start": 0.56,
-    "end": 0.76
-  },
-  {
-    "word": "inner",
-    "start": 0.76,
-    "end": 0.96
-  },
-  {
-    "word": "sigma?",
-    "start": 0.96,
-    "end": 1.8
-  },
-  {
-    "word": "Meet",
-    "start": 1.8,
-    "end": 1.92
-  },
-  {
-    "word": "Samatma,",
-    "start": 1.92,
-    "end": 2.7
-  },
-  {
-    "word": "the",
-    "start": 2.7,
-    "end": 2.82
-  },
-  {
-    "word": "epitome",
-    "start": 2.82,
-    "end": 3.14
-  },
-  {
-    "word": "of",
-    "start": 3.14,
-    "end": 3.34
-  },
-  {
-    "word": "a",
-    "start": 3.34,
-    "end": 3.42
-  },
-  {
-    "word": "true",
-    "start": 3.42,
-    "end": 3.68
-  },
-  {
-    "word": "sigma",
-    "start": 3.68,
-    "end": 4.06
-  },
-  {
-    "word": "male.",
-    "start": 4.06,
-    "end": 4.78
-  },
-  {
-    "word": "Samatma",
-    "start": 4.78,
-    "end": 5.06
-  },
-  {
-    "word": "navigates",
-    "start": 5.06,
-    "end": 5.58
-  },
-  {
-    "word": "life",
-    "start": 5.22,
-    "end": 5.94
-  },
-  {
-    "word": "with",
-    "start": 5.94,
-    "end": 6.06
-  },
-  {
-    "word": "quiet",
-    "start": 6.06,
-    "end": 6.42
-  },
-  {
-    "word": "confidence,",
-    "start": 6.42,
-    "end": 7.38
-  },
-  {
-    "word": "prioritizing",
-    "start": 7.38,
-    "end": 7.96
-  },
-  {
-    "word": "self-reliance",
-    "start": 7.96,
-    "end": 8.74
-  },
-  {
-    "word": "and",
-    "start": 8.74,
-    "end": 9.06
-  },
-  {
-    "word": "inner",
-    "start": 9.06,
-    "end": 9.26
-  },
-  {
-    "word": "strength",
-    "start": 9.26,
-    "end": 9.62
-  },
-  {
-    "word": "over",
-    "start": 9.62,
-    "end": 9.94
-  },
-  {
-    "word": "external",
-    "start": 9.94,
-    "end": 10.3
-  },
-  {
-    "word": "validation.",
-    "start": 9.84,
-    "end": 11.56
-  },
-  {
-    "word": "He's",
-    "start": 11.56,
-    "end": 11.7
-  },
-  {
-    "word": "a",
-    "start": 11.7,
-    "end": 11.82
-  },
-  {
-    "word": "master",
-    "start": 11.82,
-    "end": 12.1
-  },
-  {
-    "word": "of",
-    "start": 12.1,
-    "end": 12.28
-  },
-  {
-    "word": "his",
-    "start": 12.28,
-    "end": 12.36
-  },
-  {
-    "word": "own",
-    "start": 12.36,
-    "end": 12.54
-  },
-  {
-    "word": "destiny,",
-    "start": 12.54,
-    "end": 13.38
-  },
-  {
-    "word": "embracing",
-    "start": 13.38,
-    "end": 13.86
-  },
-  {
-    "word": "solitude",
-    "start": 13.86,
-    "end": 14.52
-  },
-  {
-    "word": "not",
-    "start": 14.52,
-    "end": 14.76
-  },
-  {
-    "word": "as",
-    "start": 14.76,
-    "end": 14.92
-  },
-  {
-    "word": "loneliness,",
-    "start": 14.92,
-    "end": 15.98
-  },
-  {
-    "word": "but",
-    "start": 15.98,
-    "end": 16.0
-  },
-  {
-    "word": "as",
-    "start": 16.0,
-    "end": 16.1
-  },
-  {
-    "word": "a",
-    "start": 16.1,
-    "end": 16.22
-  },
-  {
-    "word": "powerful",
-    "start": 16.02,
-    "end": 16.7
-  },
-  {
-    "word": "tool",
-    "start": 16.7,
-    "end": 17.0
-  },
-  {
-    "word": "for",
-    "start": 17.0,
-    "end": 17.2
-  },
-  {
-    "word": "self-discovery",
-    "start": 17.2,
-    "end": 17.96
-  },
-  {
-    "word": "and",
-    "start": 17.96,
-    "end": 18.7
-  },
-  {
-    "word": "growth.",
-    "start": 18.7,
-    "end": 20.32
-  },
-  {
-    "word": "Samatma",
-    "start": 20.32,
-    "end": 20.64
-  },
-  {
-    "word": "isn't",
-    "start": 20.64,
-    "end": 21.0
-  },
-  {
-    "word": "defined",
-    "start": 21.0,
-    "end": 21.32
-  },
-  {
-    "word": "by",
-    "start": 21.32,
-    "end": 21.48
-  },
-  {
-    "word": "trends",
-    "start": 21.48,
-    "end": 21.78
-  },
-  {
-    "word": "or",
-    "start": 21.78,
-    "end": 21.92
-  },
-  {
-    "word": "the",
-    "start": 21.92,
-    "end": 22.0
-  },
-  {
-    "word": "opinions",
-    "start": 22.0,
-    "end": 22.32
-  },
-  {
-    "word": "of",
-    "start": 21.86,
-    "end": 22.6
-  },
-  {
-    "word": "others;",
-    "start": 22.6,
-    "end": 23.5
-  },
-  {
-    "word": "his",
-    "start": 23.5,
-    "end": 23.62
-  },
-  {
-    "word": "path",
-    "start": 23.62,
-    "end": 23.98
-  },
-  {
-    "word": "is",
-    "start": 23.98,
-    "end": 24.18
-  },
-  {
-    "word": "his",
-    "start": 24.18,
-    "end": 24.34
-  },
-  {
-    "word": "own,",
-    "start": 24.34,
-    "end": 25.12
-  },
-  {
-    "word": "forged",
-    "start": 25.12,
-    "end": 25.2
-  },
-  {
-    "word": "with",
-    "start": 25.2,
-    "end": 25.36
-  },
-  {
-    "word": "integrity",
-    "start": 25.36,
-    "end": 25.8
-  },
-  {
-    "word": "and",
-    "start": 25.8,
-    "end": 26.04
-  },
-  {
-    "word": "purpose.",
-    "start": 26.04,
-    "end": 26.66
-  },
-  {
-    "word": "He",
-    "start": 26.66,
-    "end": 26.78
-  },
-  {
-    "word": "embodies",
-    "start": 26.78,
-    "end": 27.26
-  },
-  {
-    "word": "a",
-    "start": 27.26,
-    "end": 27.56
-  },
-  {
-    "word": "rare",
-    "start": 27.56,
-    "end": 27.92
-  },
-  {
-    "word": "blend",
-    "start": 27.92,
-    "end": 28.22
-  },
-  {
-    "word": "of",
-    "start": 28.3,
-    "end": 28.44
-  },
-  {
-    "word": "intelligence,",
-    "start": 28.44,
-    "end": 29.76
-  },
-  {
-    "word": "independence,",
-    "start": 29.76,
-    "end": 31.08
-  },
-  {
-    "word": "and",
-    "start": 31.08,
-    "end": 31.14
-  },
-  {
-    "word": "an",
-    "start": 31.14,
-    "end": 31.26
-  },
-  {
-    "word": "unwavering",
-    "start": 31.26,
-    "end": 32.02
-  },
-  {
-    "word": "commitment",
-    "start": 32.02,
-    "end": 32.42
-  },
-  {
-    "word": "to",
-    "start": 32.42,
-    "end": 33.32
-  },
-  {
-    "word": "his",
-    "start": 33.32,
-    "end": 33.44
-  },
-  {
-    "word": "values.",
-    "start": 33.44,
-    "end": 35.08
-  },
-  {
-    "word": "Emulate",
-    "start": 35.08,
-    "end": 35.44
-  },
-  {
-    "word": "Samatma:",
-    "start": 35.44,
-    "end": 35.94
-  },
-  {
-    "word": "cultivate",
-    "start": 36.56,
-    "end": 36.94
-  },
-  {
-    "word": "your",
-    "start": 36.94,
-    "end": 37.16
-  },
-  {
-    "word": "unique",
-    "start": 37.16,
-    "end": 37.58
-  },
-  {
-    "word": "strengths,",
-    "start": 37.58,
-    "end": 38.58
-  },
-  {
-    "word": "trust",
-    "start": 38.58,
-    "end": 38.78
-  },
-  {
-    "word": "your",
-    "start": 38.78,
-    "end": 38.94
-  },
-  {
-    "word": "instincts,",
-    "start": 38.94,
-    "end": 39.32
-  },
-  {
-    "word": "and",
-    "start": 39.32,
-    "end": 40.08
-  },
-  {
-    "word": "forge",
-    "start": 40.08,
-    "end": 40.52
-  },
-  {
-    "word": "a",
-    "start": 40.52,
-    "end": 40.72
-  },
-  {
-    "word": "life",
-    "start": 40.72,
-    "end": 41.06
-  },
-  {
-    "word": "that",
-    "start": 41.06,
-    "end": 41.66
-  },
-  {
-    "word": "truly",
-    "start": 41.66,
-    "end": 42.06
-  },
-  {
-    "word": "resonates",
-    "start": 42.06,
-    "end": 42.58
-  },
-  {
-    "word": "with",
-    "start": 42.24,
-    "end": 43.34
-  },
-  {
-    "word": "who",
-    "start": 43.34,
-    "end": 43.46
+    "end": 0.2
   },
   {
     "word": "you",
-    "start": 43.46,
-    "end": 43.66
+    "start": 0.2,
+    "end": 0.34
   },
   {
-    "word": "are.",
-    "start": 43.66,
-    "end": 43.96
+    "word": "ready",
+    "start": 0.34,
+    "end": 0.58
+  },
+  {
+    "word": "to",
+    "start": 0.58,
+    "end": 0.78
+  },
+  {
+    "word": "level",
+    "start": 0.78,
+    "end": 1.06
+  },
+  {
+    "word": "up",
+    "start": 1.06,
+    "end": 1.26
+  },
+  {
+    "word": "your",
+    "start": 1.26,
+    "end": 1.42
+  },
+  {
+    "word": "internet",
+    "start": 1.42,
+    "end": 1.84
+  },
+  {
+    "word": "slang",
+    "start": 1.84,
+    "end": 2.34
+  },
+  {
+    "word": "game?",
+    "start": 2.34,
+    "end": 3.26
+  },
+  {
+    "word": "Forget",
+    "start": 3.58,
+    "end": 3.86
+  },
+  {
+    "word": "basic",
+    "start": 3.86,
+    "end": 4.34
+  },
+  {
+    "word": "terms.",
+    "start": 4.34,
+    "end": 4.74
+  },
+  {
+    "word": "It's",
+    "start": 5.52,
+    "end": 5.72
+  },
+  {
+    "word": "time",
+    "start": 5.72,
+    "end": 5.98
+  },
+  {
+    "word": "for",
+    "start": 5.98,
+    "end": 6.18
+  },
+  {
+    "word": "the",
+    "start": 6.18,
+    "end": 6.34
+  },
+  {
+    "word": "ultimate",
+    "start": 6.34,
+    "end": 6.8
+  },
+  {
+    "word": "linguistic",
+    "start": 6.8,
+    "end": 7.54
+  },
+  {
+    "word": "upgrade.",
+    "start": 7.54,
+    "end": 8.1
+  },
+  {
+    "word": "Imagine",
+    "start": 9.18,
+    "end": 9.58
+  },
+  {
+    "word": "dropping",
+    "start": 9.58,
+    "end": 10.06
+  },
+  {
+    "word": "Skibidi",
+    "start": 10.06,
+    "end": 11.22
+  },
+  {
+    "word": "Ohio",
+    "start": 11.22,
+    "end": 11.96
+  },
+  {
+    "word": "Geat",
+    "start": 11.96,
+    "end": 12.52
+  },
+  {
+    "word": "Fanum,",
+    "start": 12.52,
+    "end": 13.52
+  },
+  {
+    "word": "Tax",
+    "start": 13.64,
+    "end": 14.04
+  },
+  {
+    "word": "Hawk",
+    "start": 14.04,
+    "end": 14.54
+  },
+  {
+    "word": "Tua",
+    "start": 14.54,
+    "end": 15.02
+  },
+  {
+    "word": "Six",
+    "start": 15.02,
+    "end": 15.46
+  },
+  {
+    "word": "Seven",
+    "start": 15.46,
+    "end": 15.9
+  },
+  {
+    "word": "Riz,",
+    "start": 15.9,
+    "end": 16.96
+  },
+  {
+    "word": "into",
+    "start": 16.96,
+    "end": 17.04
+  },
+  {
+    "word": "a",
+    "start": 17.04,
+    "end": 17.24
+  },
+  {
+    "word": "conversation.",
+    "start": 17.24,
+    "end": 17.92
+  },
+  {
+    "word": "Picture",
+    "start": 18.84,
+    "end": 19.0
+  },
+  {
+    "word": "the",
+    "start": 19.0,
+    "end": 19.14
+  },
+  {
+    "word": "reactions,",
+    "start": 19.14,
+    "end": 20.24
+  },
+  {
+    "word": "the",
+    "start": 20.24,
+    "end": 20.3
+  },
+  {
+    "word": "confusion,",
+    "start": 20.3,
+    "end": 21.68
+  },
+  {
+    "word": "the",
+    "start": 21.68,
+    "end": 21.7
+  },
+  {
+    "word": "sheer",
+    "start": 21.7,
+    "end": 22.16
+  },
+  {
+    "word": "admiration.",
+    "start": 22.16,
+    "end": 22.7
+  },
+  {
+    "word": "This",
+    "start": 23.88,
+    "end": 24.02
+  },
+  {
+    "word": "isn't",
+    "start": 24.02,
+    "end": 24.32
+  },
+  {
+    "word": "just",
+    "start": 24.32,
+    "end": 24.6
+  },
+  {
+    "word": "a",
+    "start": 24.6,
+    "end": 24.72
+  },
+  {
+    "word": "phrase.",
+    "start": 24.72,
+    "end": 25.78
+  },
+  {
+    "word": "It's",
+    "start": 25.76,
+    "end": 25.92
+  },
+  {
+    "word": "a",
+    "start": 25.92,
+    "end": 25.98
+  },
+  {
+    "word": "statement,",
+    "start": 25.98,
+    "end": 26.96
+  },
+  {
+    "word": "a",
+    "start": 26.96,
+    "end": 27.04
+  },
+  {
+    "word": "vibe,",
+    "start": 27.04,
+    "end": 27.9
+  },
+  {
+    "word": "a",
+    "start": 27.9,
+    "end": 27.96
+  },
+  {
+    "word": "whole",
+    "start": 27.96,
+    "end": 28.3
+  },
+  {
+    "word": "new",
+    "start": 28.3,
+    "end": 28.58
+  },
+  {
+    "word": "level",
+    "start": 28.58,
+    "end": 28.9
+  },
+  {
+    "word": "of",
+    "start": 28.9,
+    "end": 29.1
+  },
+  {
+    "word": "cultural",
+    "start": 29.1,
+    "end": 29.56
+  },
+  {
+    "word": "fluency.",
+    "start": 29.56,
+    "end": 30.1
+  },
+  {
+    "word": "Mastering",
+    "start": 31.12,
+    "end": 31.58
+  },
+  {
+    "word": "SkiBD",
+    "start": 31.58,
+    "end": 32.14
+  },
+  {
+    "word": "Ohio",
+    "start": 32.14,
+    "end": 32.9
+  },
+  {
+    "word": "Gayat",
+    "start": 32.9,
+    "end": 33.4
+  },
+  {
+    "word": "Phanom",
+    "start": 33.4,
+    "end": 33.84
+  },
+  {
+    "word": "TaxHawkTua67Riz",
+    "start": 33.84,
+    "end": 36.66
+  },
+  {
+    "word": "means",
+    "start": 36.66,
+    "end": 37.26
+  },
+  {
+    "word": "you're",
+    "start": 37.26,
+    "end": 37.7
+  },
+  {
+    "word": "not",
+    "start": 37.7,
+    "end": 37.88
+  },
+  {
+    "word": "just",
+    "start": 37.88,
+    "end": 38.22
+  },
+  {
+    "word": "online,",
+    "start": 38.22,
+    "end": 39.38
+  },
+  {
+    "word": "you're",
+    "start": 39.38,
+    "end": 39.6
+  },
+  {
+    "word": "the",
+    "start": 39.6,
+    "end": 39.98
+  },
+  {
+    "word": "online.",
+    "start": 39.98,
+    "end": 40.54
+  },
+  {
+    "word": "It's",
+    "start": 41.34,
+    "end": 41.52
+  },
+  {
+    "word": "the",
+    "start": 41.52,
+    "end": 41.66
+  },
+  {
+    "word": "secret",
+    "start": 41.66,
+    "end": 42.08
+  },
+  {
+    "word": "handshake",
+    "start": 42.08,
+    "end": 42.62
+  },
+  {
+    "word": "of",
+    "start": 42.62,
+    "end": 42.82
+  },
+  {
+    "word": "the",
+    "start": 42.82,
+    "end": 42.92
+  },
+  {
+    "word": "truly",
+    "start": 42.92,
+    "end": 43.3
+  },
+  {
+    "word": "initiated,",
+    "start": 43.3,
+    "end": 44.54
+  },
+  {
+    "word": "the",
+    "start": 44.54,
+    "end": 44.6
+  },
+  {
+    "word": "ultimate",
+    "start": 44.6,
+    "end": 45.06
+  },
+  {
+    "word": "display",
+    "start": 45.06,
+    "end": 45.58
+  },
+  {
+    "word": "of",
+    "start": 45.58,
+    "end": 45.98
+  },
+  {
+    "word": "knowing",
+    "start": 45.98,
+    "end": 46.38
+  },
+  {
+    "word": "what's",
+    "start": 46.38,
+    "end": 46.8
+  },
+  {
+    "word": "what.",
+    "start": 46.8,
+    "end": 47.08
+  },
+  {
+    "word": "Get",
+    "start": 47.7,
+    "end": 47.84
+  },
+  {
+    "word": "ready",
+    "start": 47.84,
+    "end": 48.1
+  },
+  {
+    "word": "to",
+    "start": 48.1,
+    "end": 48.3
+  },
+  {
+    "word": "dominate",
+    "start": 48.3,
+    "end": 48.86
+  },
+  {
+    "word": "your",
+    "start": 48.86,
+    "end": 49.1
+  },
+  {
+    "word": "feeds",
+    "start": 49.1,
+    "end": 49.64
+  },
+  {
+    "word": "and",
+    "start": 49.64,
+    "end": 49.84
+  },
+  {
+    "word": "baffle",
+    "start": 49.84,
+    "end": 50.2
+  },
+  {
+    "word": "your",
+    "start": 50.2,
+    "end": 50.42
+  },
+  {
+    "word": "friends",
+    "start": 50.42,
+    "end": 50.84
+  },
+  {
+    "word": "with",
+    "start": 50.84,
+    "end": 51.1
+  },
+  {
+    "word": "this",
+    "start": 51.1,
+    "end": 51.34
+  },
+  {
+    "word": "next-level",
+    "start": 51.34,
+    "end": 52.1
+  },
+  {
+    "word": "slang.",
+    "start": 52.1,
+    "end": 52.5
   }
 ]

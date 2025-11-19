@@ -19,21 +19,27 @@ const Login: React.FC = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-    const res = await fetch(`${API_URL}/auth/login`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      const res = await fetch(`${API_URL}/auth/login`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      alert(data.message || "Login failed");
-      return;
+      if (!res.ok) {
+        alert(data.message || "Login failed");
+        return;
+      }
+
+      // Note: Ensure backend sends user and token
+      // The AuthContext expects login(user, token)
+      login(data.user, data.token); 
+    } catch (error) {
+      console.error("Login failed:", error);
+      alert("Could not connect to the server.");
     }
-
-    login(data.token, data.user);
-    navigate("/dashboard");
   };
 
   return (
