@@ -6,14 +6,19 @@ import { BrainrotProvider } from './contexts/BrainrotContext.tsx';
 import { AuthProvider } from './contexts/AuthContext.tsx';
 
 import './index.css';
-import AppRoutes from './AppRoutes.tsx';
+
+// ❌ REMOVE THIS (AppRoutes doesn't exist anymore)
+// import AppRoutes from './AppRoutes.tsx';
+
+// ✅ USE App.tsx INSTEAD
+import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AuthProvider>
       <BrainrotProvider>
         <BrowserRouter>
-          <AppRoutes />
+          <App />
         </BrowserRouter>
       </BrainrotProvider>
     </AuthProvider>
