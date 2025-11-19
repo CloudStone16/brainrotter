@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
   const cards = [
     {
       title: isBrainrot ? 'Cook a Clip' : 'Generate Clip',
-      description: isBrainrot ? 'let him cook.' : 'Create a new clip from a URL.',
+      description: isBrainrot ? 'let him cook.' : 'Create a new clip.',
       content: <img src={skibidi} alt="skibidi" className="w-full h-auto rounded-lg mt-4" />,
       onClick: () => navigate('/generate'),
     },
@@ -57,7 +57,7 @@ const Dashboard: React.FC = () => {
             key={index}
             onClick={card.onClick}
             className={`bg-black/30 backdrop-blur-xl border border-white/10 rounded-2xl p-8 shadow-lg hover:border-neon-purple/50 transition-all duration-300 transform hover:-translate-y-2 flex flex-col ${
-              card.onClick ? 'cursor-pointer' : ''
+              card.onClick() ? 'cursor-pointer' : ''
             }`}>
             <h3 className="text-2xl font-bold text-white mb-4">{card.title}</h3>
             <p className="text-gray-400">{card.description}</p>

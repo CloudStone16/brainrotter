@@ -48,6 +48,15 @@ export const forgotPassword = async (req: Request, res: Response) => {
   const user = await User.findOne({ email });
   if (!user) return res.status(400).json({ message: "Email not found" });
 
+  // **FIX:** If the user is a legacy user without a username, create one.
+  if (!user.username) {
+    const usernameFromEmail = email.split('@')[0];
+    // Check if this generated username already exists
+    const existing = await User.findOne({ username: usernameFromEmail });
+    // If it exists, add a random number to make it unique
+    user.username = existing ? `${usernameFromEmail}${Math.floor(Math.random() * 1000)}` : usernameFromEmail;
+  }
+
   const token = crypto.randomBytes(32).toString("hex");
 
   user.resetToken = token;

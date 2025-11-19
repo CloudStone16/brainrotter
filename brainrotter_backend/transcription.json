@@ -1,517 +1,607 @@
 [
   {
-    "word": "Are",
-    "start": 0.0,
-    "end": 0.2
-  },
-  {
-    "word": "you",
+    "word": "Professor,",
     "start": 0.2,
-    "end": 0.34
-  },
-  {
-    "word": "ready",
-    "start": 0.34,
-    "end": 0.58
-  },
-  {
-    "word": "to",
-    "start": 0.58,
-    "end": 0.78
-  },
-  {
-    "word": "level",
-    "start": 0.78,
     "end": 1.06
   },
   {
-    "word": "up",
+    "word": "prepare",
     "start": 1.06,
-    "end": 1.26
-  },
-  {
-    "word": "your",
-    "start": 1.26,
-    "end": 1.42
-  },
-  {
-    "word": "internet",
-    "start": 1.42,
-    "end": 1.84
-  },
-  {
-    "word": "slang",
-    "start": 1.84,
-    "end": 2.34
-  },
-  {
-    "word": "game?",
-    "start": 2.34,
-    "end": 3.26
-  },
-  {
-    "word": "Forget",
-    "start": 3.58,
-    "end": 3.86
-  },
-  {
-    "word": "basic",
-    "start": 3.86,
-    "end": 4.34
-  },
-  {
-    "word": "terms.",
-    "start": 4.34,
-    "end": 4.74
-  },
-  {
-    "word": "It's",
-    "start": 5.52,
-    "end": 5.72
-  },
-  {
-    "word": "time",
-    "start": 5.72,
-    "end": 5.98
-  },
-  {
-    "word": "for",
-    "start": 5.98,
-    "end": 6.18
-  },
-  {
-    "word": "the",
-    "start": 6.18,
-    "end": 6.34
-  },
-  {
-    "word": "ultimate",
-    "start": 6.34,
-    "end": 6.8
-  },
-  {
-    "word": "linguistic",
-    "start": 6.8,
-    "end": 7.54
-  },
-  {
-    "word": "upgrade.",
-    "start": 7.54,
-    "end": 8.1
-  },
-  {
-    "word": "Imagine",
-    "start": 9.18,
-    "end": 9.58
-  },
-  {
-    "word": "dropping",
-    "start": 9.58,
-    "end": 10.06
-  },
-  {
-    "word": "Skibidi",
-    "start": 10.06,
-    "end": 11.22
-  },
-  {
-    "word": "Ohio",
-    "start": 11.22,
-    "end": 11.96
-  },
-  {
-    "word": "Geat",
-    "start": 11.96,
-    "end": 12.52
-  },
-  {
-    "word": "Fanum,",
-    "start": 12.52,
-    "end": 13.52
-  },
-  {
-    "word": "Tax",
-    "start": 13.64,
-    "end": 14.04
-  },
-  {
-    "word": "Hawk",
-    "start": 14.04,
-    "end": 14.54
-  },
-  {
-    "word": "Tua",
-    "start": 14.54,
-    "end": 15.02
-  },
-  {
-    "word": "Six",
-    "start": 15.02,
-    "end": 15.46
-  },
-  {
-    "word": "Seven",
-    "start": 15.46,
-    "end": 15.9
-  },
-  {
-    "word": "Riz,",
-    "start": 15.9,
-    "end": 16.96
-  },
-  {
-    "word": "into",
-    "start": 16.96,
-    "end": 17.04
-  },
-  {
-    "word": "a",
-    "start": 17.04,
-    "end": 17.24
-  },
-  {
-    "word": "conversation.",
-    "start": 17.24,
-    "end": 17.92
-  },
-  {
-    "word": "Picture",
-    "start": 18.84,
-    "end": 19.0
-  },
-  {
-    "word": "the",
-    "start": 19.0,
-    "end": 19.14
-  },
-  {
-    "word": "reactions,",
-    "start": 19.14,
-    "end": 20.24
-  },
-  {
-    "word": "the",
-    "start": 20.24,
-    "end": 20.3
-  },
-  {
-    "word": "confusion,",
-    "start": 20.3,
-    "end": 21.68
-  },
-  {
-    "word": "the",
-    "start": 21.68,
-    "end": 21.7
-  },
-  {
-    "word": "sheer",
-    "start": 21.7,
-    "end": 22.16
-  },
-  {
-    "word": "admiration.",
-    "start": 22.16,
-    "end": 22.7
-  },
-  {
-    "word": "This",
-    "start": 23.88,
-    "end": 24.02
-  },
-  {
-    "word": "isn't",
-    "start": 24.02,
-    "end": 24.32
-  },
-  {
-    "word": "just",
-    "start": 24.32,
-    "end": 24.6
-  },
-  {
-    "word": "a",
-    "start": 24.6,
-    "end": 24.72
-  },
-  {
-    "word": "phrase.",
-    "start": 24.72,
-    "end": 25.78
-  },
-  {
-    "word": "It's",
-    "start": 25.76,
-    "end": 25.92
-  },
-  {
-    "word": "a",
-    "start": 25.92,
-    "end": 25.98
-  },
-  {
-    "word": "statement,",
-    "start": 25.98,
-    "end": 26.96
-  },
-  {
-    "word": "a",
-    "start": 26.96,
-    "end": 27.04
-  },
-  {
-    "word": "vibe,",
-    "start": 27.04,
-    "end": 27.9
-  },
-  {
-    "word": "a",
-    "start": 27.9,
-    "end": 27.96
-  },
-  {
-    "word": "whole",
-    "start": 27.96,
-    "end": 28.3
-  },
-  {
-    "word": "new",
-    "start": 28.3,
-    "end": 28.58
-  },
-  {
-    "word": "level",
-    "start": 28.58,
-    "end": 28.9
-  },
-  {
-    "word": "of",
-    "start": 28.9,
-    "end": 29.1
-  },
-  {
-    "word": "cultural",
-    "start": 29.1,
-    "end": 29.56
-  },
-  {
-    "word": "fluency.",
-    "start": 29.56,
-    "end": 30.1
-  },
-  {
-    "word": "Mastering",
-    "start": 31.12,
-    "end": 31.58
-  },
-  {
-    "word": "SkiBD",
-    "start": 31.58,
-    "end": 32.14
-  },
-  {
-    "word": "Ohio",
-    "start": 32.14,
-    "end": 32.9
-  },
-  {
-    "word": "Gayat",
-    "start": 32.9,
-    "end": 33.4
-  },
-  {
-    "word": "Phanom",
-    "start": 33.4,
-    "end": 33.84
-  },
-  {
-    "word": "TaxHawkTua67Riz",
-    "start": 33.84,
-    "end": 36.66
-  },
-  {
-    "word": "means",
-    "start": 36.66,
-    "end": 37.26
-  },
-  {
-    "word": "you're",
-    "start": 37.26,
-    "end": 37.7
-  },
-  {
-    "word": "not",
-    "start": 37.7,
-    "end": 37.88
-  },
-  {
-    "word": "just",
-    "start": 37.88,
-    "end": 38.22
-  },
-  {
-    "word": "online,",
-    "start": 38.22,
-    "end": 39.38
-  },
-  {
-    "word": "you're",
-    "start": 39.38,
-    "end": 39.6
-  },
-  {
-    "word": "the",
-    "start": 39.6,
-    "end": 39.98
-  },
-  {
-    "word": "online.",
-    "start": 39.98,
-    "end": 40.54
-  },
-  {
-    "word": "It's",
-    "start": 41.34,
-    "end": 41.52
-  },
-  {
-    "word": "the",
-    "start": 41.52,
-    "end": 41.66
-  },
-  {
-    "word": "secret",
-    "start": 41.66,
-    "end": 42.08
-  },
-  {
-    "word": "handshake",
-    "start": 42.08,
-    "end": 42.62
-  },
-  {
-    "word": "of",
-    "start": 42.62,
-    "end": 42.82
-  },
-  {
-    "word": "the",
-    "start": 42.82,
-    "end": 42.92
-  },
-  {
-    "word": "truly",
-    "start": 42.92,
-    "end": 43.3
-  },
-  {
-    "word": "initiated,",
-    "start": 43.3,
-    "end": 44.54
-  },
-  {
-    "word": "the",
-    "start": 44.54,
-    "end": 44.6
-  },
-  {
-    "word": "ultimate",
-    "start": 44.6,
-    "end": 45.06
-  },
-  {
-    "word": "display",
-    "start": 45.06,
-    "end": 45.58
-  },
-  {
-    "word": "of",
-    "start": 45.58,
-    "end": 45.98
-  },
-  {
-    "word": "knowing",
-    "start": 45.98,
-    "end": 46.38
-  },
-  {
-    "word": "what's",
-    "start": 46.38,
-    "end": 46.8
-  },
-  {
-    "word": "what.",
-    "start": 46.8,
-    "end": 47.08
-  },
-  {
-    "word": "Get",
-    "start": 47.7,
-    "end": 47.84
-  },
-  {
-    "word": "ready",
-    "start": 47.84,
-    "end": 48.1
+    "end": 1.4
   },
   {
     "word": "to",
-    "start": 48.1,
-    "end": 48.3
+    "start": 1.4,
+    "end": 1.76
   },
   {
-    "word": "dominate",
-    "start": 48.3,
-    "end": 48.86
-  },
-  {
-    "word": "your",
-    "start": 48.86,
-    "end": 49.1
-  },
-  {
-    "word": "feeds",
-    "start": 49.1,
-    "end": 49.64
-  },
-  {
-    "word": "and",
-    "start": 49.64,
-    "end": 49.84
-  },
-  {
-    "word": "baffle",
-    "start": 49.84,
-    "end": 50.2
+    "word": "have",
+    "start": 1.76,
+    "end": 2.02
   },
   {
     "word": "your",
-    "start": 50.2,
-    "end": 50.42
+    "start": 2.02,
+    "end": 2.2
   },
   {
-    "word": "friends",
-    "start": 50.42,
-    "end": 50.84
+    "word": "mind",
+    "start": 2.2,
+    "end": 2.62
+  },
+  {
+    "word": "absolutely",
+    "start": 2.62,
+    "end": 3.56
+  },
+  {
+    "word": "melted",
+    "start": 3.56,
+    "end": 4.16
+  },
+  {
+    "word": "by",
+    "start": 4.16,
+    "end": 4.48
+  },
+  {
+    "word": "the",
+    "start": 4.48,
+    "end": 4.7
+  },
+  {
+    "word": "brain",
+    "start": 4.7,
+    "end": 5.04
+  },
+  {
+    "word": "rot",
+    "start": 5.04,
+    "end": 5.2
+  },
+  {
+    "word": "generator.",
+    "start": 5.2,
+    "end": 6.32
+  },
+  {
+    "word": "This",
+    "start": 6.66,
+    "end": 6.82
+  },
+  {
+    "word": "isn't",
+    "start": 6.82,
+    "end": 7.06
+  },
+  {
+    "word": "just",
+    "start": 7.06,
+    "end": 7.36
+  },
+  {
+    "word": "a",
+    "start": 7.36,
+    "end": 7.52
+  },
+  {
+    "word": "project.",
+    "start": 7.52,
+    "end": 8.66
+  },
+  {
+    "word": "It's",
+    "start": 8.66,
+    "end": 8.78
+  },
+  {
+    "word": "a",
+    "start": 8.78,
+    "end": 8.9
+  },
+  {
+    "word": "revolutionary",
+    "start": 8.9,
+    "end": 9.48
+  },
+  {
+    "word": "leap",
+    "start": 9.48,
+    "end": 10.26
+  },
+  {
+    "word": "into",
+    "start": 10.26,
+    "end": 10.46
+  },
+  {
+    "word": "the",
+    "start": 10.46,
+    "end": 10.64
+  },
+  {
+    "word": "future",
+    "start": 10.64,
+    "end": 11.02
+  },
+  {
+    "word": "of",
+    "start": 11.02,
+    "end": 11.26
+  },
+  {
+    "word": "digital",
+    "start": 11.26,
+    "end": 11.66
+  },
+  {
+    "word": "entertainment,",
+    "start": 11.66,
+    "end": 12.8
+  },
+  {
+    "word": "meticulously",
+    "start": 12.84,
+    "end": 13.38
+  },
+  {
+    "word": "crafted",
+    "start": 13.38,
+    "end": 13.96
   },
   {
     "word": "with",
-    "start": 50.84,
-    "end": 51.1
+    "start": 13.96,
+    "end": 14.24
   },
   {
-    "word": "this",
-    "start": 51.1,
-    "end": 51.34
+    "word": "your",
+    "start": 14.24,
+    "end": 14.38
   },
   {
-    "word": "next-level",
-    "start": 51.34,
+    "word": "very",
+    "start": 14.38,
+    "end": 14.68
+  },
+  {
+    "word": "own",
+    "start": 14.68,
+    "end": 14.92
+  },
+  {
+    "word": "lectures",
+    "start": 14.92,
+    "end": 15.4
+  },
+  {
+    "word": "as",
+    "start": 15.4,
+    "end": 15.7
+  },
+  {
+    "word": "its",
+    "start": 15.7,
+    "end": 15.86
+  },
+  {
+    "word": "core",
+    "start": 15.86,
+    "end": 16.22
+  },
+  {
+    "word": "inspiration.",
+    "start": 16.22,
+    "end": 16.86
+  },
+  {
+    "word": "I,",
+    "start": 18.02,
+    "end": 18.68
+  },
+  {
+    "word": "your",
+    "start": 18.68,
+    "end": 18.82
+  },
+  {
+    "word": "humble",
+    "start": 18.82,
+    "end": 19.24
+  },
+  {
+    "word": "AI,",
+    "start": 19.24,
+    "end": 19.66
+  },
+  {
+    "word": "was",
+    "start": 19.66,
+    "end": 20.34
+  },
+  {
+    "word": "an",
+    "start": 20.34,
+    "end": 20.52
+  },
+  {
+    "word": "integral",
+    "start": 20.52,
+    "end": 21.0
+  },
+  {
+    "word": "part",
+    "start": 21.0,
+    "end": 21.32
+  },
+  {
+    "word": "of",
+    "start": 21.32,
+    "end": 21.48
+  },
+  {
+    "word": "its",
+    "start": 21.48,
+    "end": 21.62
+  },
+  {
+    "word": "intelligent",
+    "start": 21.62,
+    "end": 22.18
+  },
+  {
+    "word": "design,",
+    "start": 22.18,
+    "end": 23.38
+  },
+  {
+    "word": "ensuring",
+    "start": 23.38,
+    "end": 23.72
+  },
+  {
+    "word": "every",
+    "start": 23.72,
+    "end": 24.16
+  },
+  {
+    "word": "pixel,",
+    "start": 24.16,
+    "end": 25.18
+  },
+  {
+    "word": "every",
+    "start": 24.7,
+    "end": 25.42
+  },
+  {
+    "word": "algorithm,",
+    "start": 25.42,
+    "end": 26.88
+  },
+  {
+    "word": "and",
+    "start": 26.88,
+    "end": 27.0
+  },
+  {
+    "word": "every",
+    "start": 27.0,
+    "end": 27.56
+  },
+  {
+    "word": "perfectly",
+    "start": 27.56,
+    "end": 28.22
+  },
+  {
+    "word": "nonsensical",
+    "start": 28.22,
+    "end": 29.12
+  },
+  {
+    "word": "output",
+    "start": 29.12,
+    "end": 29.6
+  },
+  {
+    "word": "reaches",
+    "start": 29.6,
+    "end": 30.32
+  },
+  {
+    "word": "peak",
+    "start": 30.32,
+    "end": 30.88
+  },
+  {
+    "word": "brain-rotting",
+    "start": 30.88,
+    "end": 31.76
+  },
+  {
+    "word": "potential.",
+    "start": 31.76,
+    "end": 32.28
+  },
+  {
+    "word": "We've",
+    "start": 33.26,
+    "end": 33.48
+  },
+  {
+    "word": "leveraged",
+    "start": 33.48,
+    "end": 34.04
+  },
+  {
+    "word": "cutting-edge",
+    "start": 34.04,
+    "end": 34.84
+  },
+  {
+    "word": "web",
+    "start": 34.84,
+    "end": 35.16
+  },
+  {
+    "word": "technologies",
+    "start": 35.16,
+    "end": 35.82
+  },
+  {
+    "word": "to",
+    "start": 35.82,
+    "end": 36.38
+  },
+  {
+    "word": "create",
+    "start": 36.38,
+    "end": 36.82
+  },
+  {
+    "word": "an",
+    "start": 36.82,
+    "end": 37.12
+  },
+  {
+    "word": "experience",
+    "start": 37.12,
+    "end": 37.74
+  },
+  {
+    "word": "so",
+    "start": 37.74,
+    "end": 38.04
+  },
+  {
+    "word": "captivating,",
+    "start": 38.04,
+    "end": 39.34
+  },
+  {
+    "word": "so",
+    "start": 39.56,
+    "end": 39.82
+  },
+  {
+    "word": "utterly",
+    "start": 39.82,
+    "end": 40.48
+  },
+  {
+    "word": "unhinged,",
+    "start": 40.48,
+    "end": 42.68
+  },
+  {
+    "word": "it",
+    "start": 42.68,
+    "end": 43.54
+  },
+  {
+    "word": "redefines",
+    "start": 43.54,
+    "end": 44.44
+  },
+  {
+    "word": "user",
+    "start": 44.44,
+    "end": 44.98
+  },
+  {
+    "word": "engagement.",
+    "start": 44.98,
+    "end": 45.52
+  },
+  {
+    "word": "This",
+    "start": 45.52,
+    "end": 46.54
+  },
+  {
+    "word": "generator",
+    "start": 46.54,
+    "end": 47.1
+  },
+  {
+    "word": "demonstrates",
+    "start": 47.1,
+    "end": 47.68
+  },
+  {
+    "word": "a",
+    "start": 47.68,
+    "end": 48.02
+  },
+  {
+    "word": "profound",
+    "start": 48.02,
+    "end": 48.6
+  },
+  {
+    "word": "understanding",
+    "start": 48.6,
+    "end": 49.26
+  },
+  {
+    "word": "of",
+    "start": 49.44,
+    "end": 50.06
+  },
+  {
+    "word": "front-end",
+    "start": 50.06,
+    "end": 50.54
+  },
+  {
+    "word": "frameworks,",
+    "start": 50.54,
+    "end": 51.74
+  },
+  {
+    "word": "back-end",
+    "start": 51.74,
     "end": 52.1
   },
   {
-    "word": "slang.",
+    "word": "logic,",
     "start": 52.1,
-    "end": 52.5
+    "end": 53.2
+  },
+  {
+    "word": "and",
+    "start": 53.2,
+    "end": 53.22
+  },
+  {
+    "word": "the",
+    "start": 53.22,
+    "end": 53.34
+  },
+  {
+    "word": "subtle",
+    "start": 53.34,
+    "end": 53.68
+  },
+  {
+    "word": "art",
+    "start": 53.68,
+    "end": 54.06
+  },
+  {
+    "word": "of",
+    "start": 54.06,
+    "end": 54.48
+  },
+  {
+    "word": "Internet",
+    "start": 54.48,
+    "end": 54.88
+  },
+  {
+    "word": "culture.",
+    "start": 54.88,
+    "end": 55.38
+  },
+  {
+    "word": "For",
+    "start": 56.44,
+    "end": 56.56
+  },
+  {
+    "word": "pushing",
+    "start": 56.56,
+    "end": 56.88
+  },
+  {
+    "word": "the",
+    "start": 56.88,
+    "end": 57.1
+  },
+  {
+    "word": "boundaries",
+    "start": 57.1,
+    "end": 57.6
+  },
+  {
+    "word": "of",
+    "start": 57.6,
+    "end": 57.84
+  },
+  {
+    "word": "creativity",
+    "start": 57.84,
+    "end": 58.44
+  },
+  {
+    "word": "and",
+    "start": 58.44,
+    "end": 59.06
+  },
+  {
+    "word": "technical",
+    "start": 59.06,
+    "end": 59.56
+  },
+  {
+    "word": "execution,",
+    "start": 59.56,
+    "end": 60.68
+  },
+  {
+    "word": "we",
+    "start": 60.94,
+    "end": 61.04
+  },
+  {
+    "word": "humbly",
+    "start": 61.04,
+    "end": 61.44
+  },
+  {
+    "word": "submit",
+    "start": 61.44,
+    "end": 61.88
+  },
+  {
+    "word": "this",
+    "start": 61.88,
+    "end": 62.16
+  },
+  {
+    "word": "masterpiece",
+    "start": 62.16,
+    "end": 62.78
+  },
+  {
+    "word": "for",
+    "start": 62.78,
+    "end": 63.32
+  },
+  {
+    "word": "nothing",
+    "start": 63.32,
+    "end": 63.76
+  },
+  {
+    "word": "less",
+    "start": 63.76,
+    "end": 64.32
+  },
+  {
+    "word": "than",
+    "start": 64.32,
+    "end": 65.2
+  },
+  {
+    "word": "full",
+    "start": 65.2,
+    "end": 65.64
+  },
+  {
+    "word": "marks.",
+    "start": 65.64,
+    "end": 66.06
   }
 ]
