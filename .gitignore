@@ -142,3 +142,4 @@ vite.config.ts.timestamp-*
 brainrotter_backend/background_vids/
 brainrotter_backend/background_music/
 brainrotter_backend/outputs
+.brainrotter_setup_done
