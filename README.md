@@ -1,5 +1,5 @@
 # brainrotter
-rots your brain
+
 Short-form platforms are dominated by faceless, algorithm optimized content but making it at scale is slow, manual, and exhausting. Our tool simplifies this for content creators.
 
 What it does
